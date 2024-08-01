@@ -231,6 +231,16 @@ class Cli {
           name: 'topSpeed',
           message: 'Enter Top Speed',
         },
+        {
+          type: 'input',
+          name: 'diameter',
+          message: 'Enter Wheel Diameter in Inches',
+        },
+        {
+          type: 'input',
+          name: 'tireBrand',
+          message: 'Enter Tire Brand',
+        },
       ])
       .then((answers) => {
         const motorbike = new Motorbike(
@@ -242,7 +252,7 @@ class Cli {
           parseInt(answers.year),
           parseInt(answers.weight),
           parseInt(answers.topSpeed),
-          []
+          [new Wheel(parseInt(answers.diameter), answers.tireBrand), new Wheel(parseInt(answers.diameter), answers.tireBrand)]
         );
         // TODO: push the motorbike to the vehicles array
         this.vehicles.push(motorbike);
