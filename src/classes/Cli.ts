@@ -313,12 +313,6 @@ class Cli {
         },
       ])
       .then((answers) => {
-        // // Find the selected vehicle - so type-speicif actions can be done
-        // const selectedVehicle = this.vehicles.find((vehicle) => vehicle.vin === this.selectedVehicleVin);
-
-        // // Run the selected action only if a vehicle is selected as we need to know the type of vehicle to perform some actions
-        // if (!selectedVehicle) return;
-
         // perform the selected action
         if (answers.action === 'Print details') {
           // find the selected vehicle and print its details
@@ -378,12 +372,6 @@ class Cli {
           }
         // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
         // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
-        // } else if (answers.action === 'Wheelie') {
-        //   if (selectedVehicle instanceof Motorbike) {
-        //     selectedVehicle.wheelie();
-        //   } else {
-        //     console.log('Only Motorbikes can perform a Wheelie');
-        //   }
         } else if (answers.action === 'Wheelie') {
           let motorbike: Motorbike | undefined;
 
