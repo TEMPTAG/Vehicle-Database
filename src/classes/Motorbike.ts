@@ -65,6 +65,7 @@ class Motorbike extends Vehicle {
     console.log(`Year: ${this.year}`);
     console.log(`Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
+    console.log(this.wheels);
 
     // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
     this.wheels.forEach((wheel, index) => {

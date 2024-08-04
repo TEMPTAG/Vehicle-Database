@@ -231,16 +231,16 @@ class Cli {
           name: 'topSpeed',
           message: 'Enter Top Speed',
         },
-        {
-          type: 'input',
-          name: 'diameter',
-          message: 'Enter Wheel Diameter in Inches',
-        },
-        {
-          type: 'input',
-          name: 'tireBrand',
-          message: 'Enter Tire Brand',
-        },
+        // {
+        //   type: 'input',
+        //   name: 'diameter',
+        //   message: 'Enter Wheel Diameter in Inches',
+        // },
+        // {
+        //   type: 'input',
+        //   name: 'tireBrand',
+        //   message: 'Enter Tire Brand',
+        // },
       ])
       .then((answers) => {
         const motorbike = new Motorbike(
@@ -284,7 +284,7 @@ class Cli {
         // TODO: check if the selected vehicle is the truck
         if (answers.vehicleToTow === this.vehicles.find((vehicle) => vehicle.vin === this.selectedVehicleVin)) {
           // TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
-          console.log('This truck cannot tow itself');
+          console.log('The truck cannot tow itself.');
           this.performActions();
         } else {
         // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
@@ -391,7 +391,7 @@ class Cli {
             this.findVehicleToTow();
             return;
           } else {
-            console.log('Only Trucks can tow');
+            console.log('Only Trucks can tow.');
           }
         // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
         } else if (answers.action === 'Wheelie') {
@@ -405,7 +405,7 @@ class Cli {
           if (motorbike) {
             motorbike.wheelie();
           } else {
-            console.log('Only Motorbikes can perform a Wheelie');
+            console.log('Only Motorbikes can perform a Wheelie.');
           }
         } else if (answers.action === 'Select or create another vehicle') {
           // start the cli to return to the initial prompt if the user wants to select or create another vehicle
