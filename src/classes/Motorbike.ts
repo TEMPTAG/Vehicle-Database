@@ -39,11 +39,7 @@ class Motorbike extends Vehicle {
       this.year = year;
       this.weight = weight;
       this.topSpeed = topSpeed;
-      if (wheels.length !== 2) {
-        this.wheels = [new Wheel(), new Wheel()];
-      } else {
-        this.wheels = wheels;
-      }
+      this.wheels = wheels.length !== 2 ? wheels : [new Wheel(), new Wheel()];
     }
 
   // TODO: Implement the wheelie method
@@ -65,7 +61,6 @@ class Motorbike extends Vehicle {
     console.log(`Year: ${this.year}`);
     console.log(`Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
-    console.log(this.wheels);
 
     // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
     this.wheels.forEach((wheel, index) => {
