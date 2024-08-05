@@ -10,7 +10,7 @@
 
 This Vehicle Datatbase Command-Line Application lets users creat, manage, and perform various actions on different types of vehicles, specifically; Cars, Trucks, and Motorbikes. Using TypeScript ensures type safety, and the Inquirer.js Package provides the backbone of this interactive CLA.
 
-![Animated .gif of Application]()
+![Screenshot of Application](./assets/images/vehicleDatabase.jpg)
 [You can see a video of the application in action HERE](https://drive.google.com/file/d/1hy444v2owl5r73iQ6qsFHuBbt1lXHips/view)
 
 Hi, I am Ian Ferguson, and this fun CLI application allows you to play with the provided vehicles or create your own. Each vehicle has its own inputs, abilities, and feedback to your inputs. Play around with it and let me know what you think. Future work will include more specific inputs, more requirements, and more defaults if inputs are left blank.
