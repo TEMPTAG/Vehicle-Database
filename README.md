@@ -4,6 +4,8 @@
 
 ![GitHub License](https://img.shields.io/github/license/TEMPTAG/readme-gen?label=License)
 
+---
+
 ## Description
 
 This Vehicle Datatbase Command-Line Application lets users creat, manage, and perform various actions on different types of vehicles, specifically; Cars, Trucks, and Motorbikes. Using TypeScript ensures type safety, and the Inquirer.js Package provides the backbone of this interactive CLA.
@@ -14,6 +16,8 @@ This Vehicle Datatbase Command-Line Application lets users creat, manage, and pe
 [You can see a video of the application in action HERE]()
 
 Hi, I am Ian Ferguson, and this fun CLI application allows you to play with the provided vehicles or create your own. Each vehicle has its own inputs, abilities, and feedback to your inputs. Play around with it and let me know what you think. Future work will include more specific inputs, more requirements, and more defaults if inputs are left blank.
+
+---
 
 ## Table of Contents
 
@@ -59,6 +63,8 @@ cd Vehicle-Database
 ```bash
 npm install
 ```
+
+---
 
 ## Usage
 
@@ -109,8 +115,8 @@ npm install
         ? Enter Top Speed
         ```
 
-        > [!NOTE]
-        > VIN information is auto-generated, and 4 default wheel obejects will be added to the `Car`
+        > **NOTE**:
+        > _VIN information is auto-generated, and 4 default wheel obejects will be added to the_ `Car`
 
       - `Truck`:
 
@@ -125,8 +131,8 @@ npm install
         ? Enter Towing Capacity  #Only on vehicle type Truck
         ```
 
-        > [!NOTE]
-        > VIN information is auto-generated, and 4 default wheel obejects will be added to the `Truck`
+        > **NOTE**:
+        > _VIN information is auto-generated, and 4 default wheel obejects will be added to the_ `Truck`
 
       - `Motorbike`:
 
@@ -142,8 +148,8 @@ npm install
         ? Enter Tire Brand  #Only on vehicle type Motorbike
         ```
 
-        > [!NOTE]
-        > VIN information is auto-generated, and default vaules will be added to the `Motorbike` wheel objects if no values are entered for 'Wheel Diameter' and/or 'Tire Brand'
+        > **NOTE**:
+        > _VIN information is auto-generated, and default vaules will be added to the 2_ `Motorbike` _wheel objects if no values are entered for 'Wheel Diameter' and/or 'Tire Brand'_
 
 5.  After entering the values above you are able to then perform `actions` on that vehicle, select or create another vehicle, or exit the application:
 
@@ -165,6 +171,8 @@ npm install
 
 Have fun and enjoy this simple Vehicle Database through using existing vehicles in the database, adding your own vehicles, and performing basic actions on all of the vehiles!
 
+---
+
 ## Contributing
 
 ![GitHub contributors](https://img.shields.io/github/contributors/TEMPTAG/Vehicle-Database?color=green) ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/TEMPTAG/Vehicle-Database) ![GitHub top language](https://img.shields.io/github/languages/top/TEMPTAG/Vehicle-Database)
@@ -175,6 +183,8 @@ OH. MY. GOODNESS. Collaborations are amazing. Share ideas, code, etc. with other
 - FORK IT ALL - create a fork, clone it down, mess it up, do the neato commits and comments, push it back, test it at least a million times, then submit a pull request for me to review and merge into the project if I think you are cool (and the code is cool too) - but again, the nice thing to do would be emailing me first and telling me your intentions... and don't forget the compliment part
 
 Something, something... Have your people call my people. And by call, I mean email - who answers the phone these days?
+
+---
 
 ## Tests
 
