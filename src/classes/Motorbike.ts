@@ -39,7 +39,12 @@ class Motorbike extends Vehicle {
       this.year = year;
       this.weight = weight;
       this.topSpeed = topSpeed;
-      this.wheels = wheels.length !== 2 ? wheels : [new Wheel(), new Wheel()];
+      // Check if the wheels array has 2 elements, if not, create 2 new Wheel objects
+      if (wheels.length === 2) {
+        this.wheels = wheels;
+      } else {
+        this.wheels = [new Wheel(), new Wheel()];
+      }
     }
 
   // TODO: Implement the wheelie method
